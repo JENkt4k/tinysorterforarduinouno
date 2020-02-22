@@ -1,5 +1,5 @@
 # Tiny Sorter for Ardunio Uno
-The current Tiny Sorter requires Arduino Leonardo due to the WebUSB compatibilty issue. 
+The current [Tiny Sorter](https://experiments.withgoogle.com/tiny-sorter/view) requires Arduino Leonardo due to the WebUSB compatibilty issue. 
 Implementing a code change to the serial.js to accept an Arduino Uno should be pretty straight forward.
 
 # WIP: Currently this is just a collection of resources to complete the "quest"
