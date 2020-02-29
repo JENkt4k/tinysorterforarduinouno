@@ -65,7 +65,7 @@ void loop()
             myservo.write(pos); // tell servo to go to position in variable 'pos'
             delay(5);           // waits 15ms for the servo to reach the position
           }
-          delay(1000);
+          delay(500); //
           Serial.write("ceral detected.\r\n");
         }
 
@@ -77,9 +77,9 @@ void loop()
           { // goes from 0 degrees to 180 degrees
             // in steps of 1 degree
             myservo.write(pos); // tell servo to go to position in variable 'pos'
-            delay(20);          // waits 15ms for the servo to reach the position
+            delay(5);           // waits 15ms for the servo to reach the position
           }
-          delay(1000);
+          delay(500); //
           Serial.write("mallow detected.\r\n");
         }
 
@@ -95,6 +95,15 @@ void loop()
         }
         delay(1000);*/
           Serial.write("RESET.\r\n");
+        }
+
+        else if (color[0] > 9)
+        {
+          int mod180 = color[0] % 181;
+          myservo.write(mod180);
+          //freeze90 = true;
+          delay(1000);
+          Serial.write(mod180);
         }
         while (Serial.available() > 1)
         {
