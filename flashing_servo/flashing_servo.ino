@@ -97,7 +97,7 @@ void loop()
           Serial.write("RESET.\r\n");
         }
 
-        else if (color[0] > 9)
+        else if (color[0] > 9 || color[0] < 1)
         {
           int mod180 = color[0] % 181;
           myservo.write(mod180);
