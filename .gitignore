@@ -3,3 +3,6 @@
 dist
 node_modules
 *.sw*
+.vscode/arduino.json
+.vscode/c_cpp_properties.json
+.vscode/settings.json
